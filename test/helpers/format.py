@@ -5,11 +5,11 @@ def format_register(register: int) -> str:
     if register < 13:
         return f"R{register}"
     if register == 13:
-        return f"%blockIdx"
+        return "%blockIdx"
     if register == 14:
-        return f"%blockDim"
+        return "%blockDim"
     if register == 15:
-        return f"%threadIdx"
+        return "%threadIdx"
     
 def format_instruction(instruction: str) -> str:
     opcode = instruction[0:4]
